@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biografía Profesional</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Tarjeta de perfil -->
+        <div class="profile-card">
+            <img src="{{ url_for('static', filename='img/foto_perfil.jpg') }}" alt="Mi foto" class="profile-img">
+            <div>
+                <h1>Diego Gabriel Huancara Becerra</h1>
+                <p>Estudiante de Ingeniería Industrial | UCSP</p>
+            </div>
+        </div>
+
+        <h2>Biografía</h2>
+        <p>
+            Hola!! me llamo <strong>Diego</strong>, tengo 19 años soy estudiante de <strong>Ingeniería Industrial</strong> en la 
+            <strong>Universidad Católica San Pablo</strong> (UCSP) de Arequipa, Perú. 
+            Mis compañeros de aventura académica son <strong>Fernando</strong>, 
+             y <strong>Victor</strong>.
+        </p>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li><strong>fútbol:</strong>El futbol es una de mis pasiones mas importantes, me gusta jugarlo, 
+                y ademas verlo en el estadio o desde mi telivisor, soy seguidor de
+                 <strong>universitario de deportes Ⓤ</strong> y del <strong>tottenham hotspur</strong>.</li>
+            <li><strong>videojuegos:</strong>Me gusta mucho jugar videojuegos en mi pc, especialmente con mis amigos, titulos como: 
+                <strong>overcooked, fall guys, fornite, etc</strong>.</li>
+            <li><strong>música:</strong> disfruto mucho escuchar música en especial de mis artistas favoritos, 
+                <strong>marama</strong>, <strong>Michaael Jackson</strong>, <strong>nirvana</strong> y <strong>gusttavo lima</strong>
+            <li><strong>películas de superheroes:</strong>tambien me gusta las peliculas de superheroes, peliculas como: 
+                <strong>the batman</strong> y <strong> Capitán America: El primer vengador</strong></li>
+        </ul>
+
+        <a href="https://www.linkedin.com/in/diego-gabriel-huancara-becerra-755ba0326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn" target="_blank">Conéctame en LinkedIn</a>
+        <a href="mailto:diego.huancara@ucsp.edu.pe" class="btn" target="_blank">Envíame un correo</a>
+    </div>
+</body>
+</html>

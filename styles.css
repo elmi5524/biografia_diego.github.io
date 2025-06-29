@@ -1,0 +1,111 @@
+/* ===== FUENTES PROFESIONALES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ===== ESTILOS GLOBALES ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== TIPOGRAFÍA JERÁRQUICA ===== */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+h2 {
+    color: #3498db;
+    font-weight: 500;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #eee;
+}
+
+/* ===== ELEMENTOS INTERACTIVOS ===== */
+a {
+    color: #006dfc;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-bottom: 1px dotted transparent;
+}
+
+a:hover {
+    color: #c0392b;
+    border-bottom-color: #c0392b;
+}
+
+/* ===== TARJETA DE PERFIL ===== */
+.profile-card {
+    background: rgba(112, 184, 243, 0.349);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f1f1f1;
+}
+
+/* ===== EFECTOS MODERNOS ===== */
+.btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #3498db, #9b59b6);
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(52, 152, 219, 0.4);
+}
